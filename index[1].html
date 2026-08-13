@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Marwan Adel - Web Designer & Frontend Developer">
+    <title>Marwan Adel | Web Designer & Digital Strategist</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Canvas background for interactive particle effect -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Intro Animation Screen -->
+    <div id="intro-screen">
+        <div class="intro-content">
+            <div class="intro-badge">Portfolio 2026</div>
+            <h1 class="intro-text">Welcome To My Portfolio</h1>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="intro-subtext">Preparing an interactive experience...</p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#hero">Marwan<span>.Adel</span></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-social-bar">
+                    <a href="https://instagram.com/marwan_3del_" target="_blank" rel="noopener noreferrer" class="social-btn instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/201158472444" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:marawanadel55556@gmail.com" class="social-btn email" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:01158472444" class="social-btn phone" title="Call"><i class="fas fa-phone-alt"></i></a>
+                </div>
+
+                <div class="hero-badge">Available for New Projects</div>
+                <h1 class="hero-title">Marwan Adel Mohamed</h1>
+                <h2 class="hero-typing-container">
+                    I am a <span class="typing-text"></span><span class="typing-cursor">|</span>
+                </h2>
+                
+                <p class="hero-description">
+                    Specialized in crafting engaging user interfaces, managing digital strategy for apparel brands, and operating end-to-end production systems.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span>View Portfolio</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/201158472444" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <span>Direct Chat</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Biography</span>
+                    <h2 class="section-title">About Me <span>.</span></h2>
+                </div>
+
+                <div class="about-wrapper">
+                    <div class="about-image-column">
+                        <div class="profile-card">
+                            <div class="image-wrapper">
+                                <img src="profile.jpg" alt="Marwan Adel" class="profile-img">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-column">
+                        <h3 class="about-heading">Frontend Developer & Brand Growth Specialist</h3>
+                        <p class="about-text">
+                            I am Marwan Adel, a Web Designer and Frontend Developer with a solid foundation in <strong>HTML, CSS, and JavaScript</strong>. I blend clean code with strategic marketing vision, bringing hands-on experience in the garment production and clothing factory sector.
+                        </p>
+                        <p class="about-text">
+                            I previously managed system operations for established apparel manufacturers like "Vivani", launched creative advertising campaigns, and developed content that elevates brand presence across social platforms.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fas fa-code"></i></div>
+                                <div class="highlight-info">
+                                    <h4>Frontend Development</h4>
+                                    <p>Building modern responsive sites</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fas fa-bullseye"></i></div>
+                                <div class="highlight-info">
+                                    <h4>Ad Strategies</h4>
+                                    <p>High-converting creative campaigns</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fas fa-industry"></i></div>
+                                <div class="highlight-info">
+                                    <h4>System Operations</h4>
+                                    <p>Streamlining factory workflows</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Creative Services <span>.</span></h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-number">01</div>
+                        <div class="service-icon-box">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Design & Development</h3>
+                        <p class="service-desc">
+                            Crafting fast, fully responsive websites tailored for all screen sizes using HTML5, CSS3, JavaScript, and smooth animations.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Layouts</li>
+                            <li><i class="fas fa-check"></i> Performance Optimization</li>
+                            <li><i class="fas fa-check"></i> Modern UI Interactions</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-number">02</div>
+                        <div class="service-icon-box">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="service-title">Social Media & Ad Management</h3>
+                        <p class="service-desc">
+                            End-to-end page management, targeted ad campaigns, and compelling content creation designed to scale brand awareness and sales.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Creative Content Strategy</li>
+                            <li><i class="fas fa-check"></i> Targeted Campaigns</li>
+                            <li><i class="fas fa-check"></i> Brand Identity Growth</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-number">03</div>
+                        <div class="service-icon-box">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="service-title">Factory Operating Systems</h3>
+                        <p class="service-desc">
+                            Providing technical solutions and system administration for garment factories to streamline production lines and tracking.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> System Management</li>
+                            <li><i class="fas fa-check"></i> Production Line Structuring</li>
+                            <li><i class="fas fa-check"></i> Department Digitization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Toolkit</span>
+                    <h2 class="section-title">Skills & Technologies <span>.</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span><small>Semantic structure</small></div>
+                    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span><small>Responsive UI</small></div>
+                    <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span><small>Interactive experiences</small></div>
+                    <div class="skill-card"><i class="fas fa-pen-ruler"></i><span>UI / UX</span><small>Clean interfaces</small></div>
+                    <div class="skill-card"><i class="fas fa-bullhorn"></i><span>Digital Marketing</span><small>Content & campaigns</small></div>
+                    <div class="skill-card"><i class="fas fa-robot"></i><span>AI Tools</span><small>Creative workflows</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Recent Works</span>
+                    <h2 class="section-title">Featured Projects <span>.</span></h2>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder-bg p1"></div>
+                            <div class="portfolio-tag">E-Commerce</div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>"Sukina" Brand Store</h3>
+                            <p>An elegant online store built for prayer dress sales with a smooth shopping experience and refined product showcase.</p>
+                            <div class="portfolio-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="portfolio-actions">
+                                <button class="project-btn" type="button" data-project="Sukina Brand Store">View Case Study <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder-bg p2"></div>
+                            <div class="portfolio-tag">Restaurant</div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Interactive Restaurant Portal</h3>
+                            <p>An interactive website interface featuring digital menus, daily specials, and direct ordering integration.</p>
+                            <div class="portfolio-tech">
+                                <span>UI/UX</span>
+                                <span>HTML</span>
+                                <span>CSS Animation</span>
+                            </div>
+                            <div class="portfolio-actions">
+                                <button class="project-btn" type="button" data-project="Interactive Restaurant Portal">View Case Study <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder-bg p3"></div>
+                            <div class="portfolio-tag">System Admin</div>
+                        </div>
+                        <div class="portfolio-details">
+                            <h3>Vivani Apparel Factory System</h3>
+                            <p>Digitized and streamlined operational workflows for garment production tracking and management.</p>
+                            <div class="portfolio-tech">
+                                <span>Management</span>
+                                <span>Operations</span>
+                            </div>
+                            <div class="portfolio-actions">
+                                <button class="project-btn" type="button" data-project="Vivani Apparel Factory System">View Case Study <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Qualifications</span>
+                    <h2 class="section-title">Certificates & Credentials <span>.</span></h2>
+                </div>
+
+                <div class="certificates-grid">
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span class="cert-badge">Verified</span>
+                        </div>
+                        <h3 class="cert-title">Web Development (JS, HTML, CSS)</h3>
+                        <div class="cert-organizers">
+                            <p><i class="fas fa-university"></i> Hiroshima University, Japan</p>
+                            <p><i class="fas fa-award"></i> Sprix Educational Platform</p>
+                            <p><i class="fas fa-building"></i> Ministry of Education</p>
+                        </div>
+                        <p class="cert-desc">Certified credential in frontend web development technologies and interactive JavaScript programming.</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-header">
+                            <i class="fas fa-language"></i>
+                            <span class="cert-badge">Verified</span>
+                        </div>
+                        <h3 class="cert-title">English Language Proficiency</h3>
+                        <div class="cert-organizers">
+                            <p><i class="fas fa-university"></i> Cambridge University</p>
+                        </div>
+                        <p class="cert-desc">Certified intensive program focusing on professional communication skills for global project environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Start Your Project <span>.</span></h2>
+                </div>
+
+                <p class="contact-lead">Choose your preferred channel to reach out to me directly:</p>
+
+                <div class="contact-grid">
+                    <a href="https://wa.me/201158472444" target="_blank" rel="noopener noreferrer" class="contact-card whatsapp">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h3>WhatsApp Chat</h3>
+                        <p>+20 115 847 2444</p>
+                        <span class="contact-action">Message Now <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="tel:01158472444" class="contact-card phone">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3>Direct Call</h3>
+                        <p>+20 115 847 2444</p>
+                        <span class="contact-action">Call Now <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="https://instagram.com/marwan_3del_" target="_blank" rel="noopener noreferrer" class="contact-card instagram">
+                        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                        <h3>Instagram</h3>
+                        <p>@marwan_3del_</p>
+                        <span class="contact-action">Follow Profile <i class="fas fa-arrow-right"></i></span>
+                    </a>
+
+                    <a href="mailto:marawanadel55556@gmail.com" class="contact-card email">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email Address</h3>
+                        <p>marawanadel55556@gmail.com</p>
+                        <span class="contact-action">Send Email <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Project Case Study Modal -->
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" aria-label="Close case study" data-close-modal><i class="fas fa-times"></i></button>
+            <span class="section-subtitle">Project Case Study</span>
+            <h2 id="modal-title">Project</h2>
+            <p id="modal-description"></p>
+            <div class="modal-note"><i class="fas fa-circle-info"></i> Live demo and source links can be added once the project URLs are ready.</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>All Rights Reserved &copy; 2026 | Designed & Built by <span>Marwan Adel</span></p>
+            <div class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+</body>
+</html>
